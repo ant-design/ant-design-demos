@@ -18,7 +18,8 @@
   "scripts": {
     "pre": "rimraf ant-design && git clone git@github.com:ant-design/ant-design.git --depth=1",
     "sync": "ts-node --esm --project tsconfig.node.json scripts/pull-demos.ts",
-    "build": "father build"
+    "build": "father build",
+    "prepublishOnly": "npm run build && np --yolo --no-publish && npm run gh-pages"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +32,7 @@
     "antd": "^5.4.2",
     "father": "^4.1.7",
     "glob": "^10.0.0",
+    "np": "^7.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.0",
