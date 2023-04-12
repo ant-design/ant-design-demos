@@ -19,7 +19,7 @@
     "pre": "rimraf ant-design && git clone git@github.com:ant-design/ant-design.git --depth=1",
     "sync": "ts-node --esm --project tsconfig.node.json scripts/pull-demos.ts",
     "build": "father build",
-    "prepublishOnly": "npm run build && np --yolo --no-publish && npm run gh-pages"
+    "prepublishOnly": "npm run build && np --yolo --no-publish"
   },
   "keywords": [],
   "author": "",
