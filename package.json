@@ -1,9 +1,13 @@
 {
-  "name": "ant-design-demos",
-  "version": "1.0.0",
+  "name": "@ant-design/demos",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
+  "files": [
+    "es",
+    "lib"
+  ],
   "scripts": {
     "pre": "rimraf ant-design && git clone git@github.com:ant-design/ant-design.git --depth=1",
     "sync": "ts-node --esm --project tsconfig.node.json scripts/pull-demos.ts",

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "declaration": true,
     "strictNullChecks": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -15,7 +16,7 @@
     "target": "es6",
     "lib": ["dom", "es2017"],
     "skipLibCheck": true,
-    "stripInternal": true
+    "stripInternal": true,
   },
-  "exclude": ["node_modules", "ant-design"]
+  "exclude": ["node_modules", "ant-design", "es", "lib"]
 }
