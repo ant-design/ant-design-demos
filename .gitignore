@@ -8,4 +8,6 @@ package-lock.json
 yarn.lock
 
 ant-design/
-demos/
+
+es/
+lib/

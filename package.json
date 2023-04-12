@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "pre": "rimraf ant-design && git clone git@github.com:ant-design/ant-design.git --depth=1",
-    "demo": "ts-node --esm --project tsconfig.node.json scripts/pull-demos.ts"
+    "sync": "ts-node --esm --project tsconfig.node.json scripts/pull-demos.ts",
+    "build": "father build"
   },
   "keywords": [],
   "author": "",
@@ -24,5 +25,10 @@
     "rimraf": "^5.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "antd": "^5.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   }
 }

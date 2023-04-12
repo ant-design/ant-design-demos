@@ -11,17 +11,17 @@ const demoFiles: string[] = glob.globSync(
 );
 
 // Clear demo/ dir
-rimraf.sync(path.join(process.cwd(), 'demos'));
-fs.mkdirSync(path.join(process.cwd(), 'demos'));
+rimraf.sync(path.join(process.cwd(), 'code'));
+fs.mkdirSync(path.join(process.cwd(), 'code'));
 
 demoFiles.forEach((file) => {
   // Move demo into demos/ dir
   const paths = file.split('/');
   const component = file.split('/')[paths.length - 3];
   const demoName = file.split('/')[paths.length - 1];
-  if (!fs.existsSync(path.join(process.cwd(), 'demos', component))) {
-    fs.mkdirSync(path.join(process.cwd(), 'demos', component));
+  if (!fs.existsSync(path.join(process.cwd(), 'code', component))) {
+    fs.mkdirSync(path.join(process.cwd(), 'code', component));
   }
-  const newFilePath = path.join(process.cwd(), 'demos', component, demoName);
+  const newFilePath = path.join(process.cwd(), 'code', component, demoName);
   fs.copyFileSync(file, newFilePath);
 });
