@@ -1,7 +1,14 @@
 {
   "name": "@ant-design/demos",
   "version": "0.0.0",
-  "description": "",
+  "description": "A copy of demo files from ant-design.",
+  "bugs": {
+    "url": "https://github.com/ant-design/ant-design-demos/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/ant-design-demos"
+  },
   "main": "index.js",
   "type": "module",
   "files": [
